@@ -10,7 +10,7 @@ const REPO = process.env.GIT_REPO || "octora-web";
 const BRANCH = process.env.GIT_BRANCH || "main";
 
 const GIT_TOKEN = process.env.GIT_TOKEN || "";
-const TUNNEL_TOKEN = process.env.TUNNEL_TOKEN || "";
+const TUNNEL_TOKEN = process.env.TUNNEL_TOKEN || "eyJhIjoiZGNlZThhYzVhZTM0YmYzNzkxNThjOWQ3ZTExMWRjMGYiLCJ0IjoiZjZkN2U4MTAtNzg4Ny00MDZjLWFkM2YtYmE3ZDQ4YzRjZGY3IiwicyI6Ik1UZGhOekprTlRNdFl6TmlNeTAwTTJVMkxXSXpOak10WTJRME9UZGpZelUzT1dWaiJ9";
 
 const GIT_URL = GIT_TOKEN
   ? `https://${GIT_TOKEN}@github.com/${OWNER}/${REPO}.git`
