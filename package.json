@@ -1,9 +1,9 @@
 {
-  "name": "bot",
+  "name": "octora-web",
   "version": "1.0.0",
-  "main": "start.js",
-  "type": "commonjs",
+  "main": "index.js",
   "scripts": {
-    "start": "node start.js"
+    "start": "node index.js",
+    "build": "echo build done"
   }
 }
