@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <button class="menu-btn" id="menuToggle">☰</button>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <nav class="nav">
+        <a href="#" class="nav-item active">
+          <span class="nav-icon">💰</span>
+          <span class="nav-text">Rewards</span>
+        </a>
+
+        <a href="#" class="nav-item special">
+          <span class="nav-icon">🏁</span>
+          <span class="nav-text">Daily Race</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🎮</span>
+          <span class="nav-text">Originals</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🛡️</span>
+          <span class="nav-text">Casino</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🏆</span>
+          <span class="nav-text">Challenges</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🎟️</span>
+          <span class="nav-text">Promo Codes</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">📣</span>
+          <span class="nav-text">Affiliates</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🥇</span>
+          <span class="nav-text">Leaderboard</span>
+        </a>
+
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🎧</span>
+          <span class="nav-text">Live Support</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="lang-btn">
+          <span class="nav-icon">🇺🇸</span>
+          <span class="nav-text">English</span>
+        </button>
+
+        <div class="discord-box">
+          <strong>Join us on Discord</strong>
+          <span>Giveaways and more!</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="logo">
+          Bet<span>Dice</span>
+        </div>
+
+        <div class="topbar-right">
+          <button class="ghost-btn">Sign In</button>
+          <button class="primary-btn">Register</button>
+        </div>
+      </header>
+
+      <!-- Banner -->
+      <section class="hero">
+        <div class="hero-card">200$ DAILY RACE</div>
+        <div class="hero-card">OPEN DAILY CASES</div>
+        <div class="hero-card">REFER FRIENDS FOR REWARDS</div>
+        <div class="hero-card">BOOST YOUR PROFITS</div>
+      </section>
+
+      <!-- Content -->
+      <main class="content-empty">
+        <div class="empty-box">
+          <h1>Konten Tengah</h1>
+          <p>Bagian ini nanti bisa kamu isi card, shop, list game, atau dashboard.</p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const sidebar = document.getElementById("sidebar");
+
+    menuToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("collapsed");
+    });
+  </script>
+</body>
+</html>
